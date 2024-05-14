@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Schedule Customizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Customize Your Weekly Schedule</h1>
+    </header>
+    <main>
+        <section id="tabs">
+            <button class="tablink" onclick="openDay(event, 'Monday')">Monday</button>
+            <button class="tablink" onclick="openDay(event, 'Tuesday')">Tuesday</button>
+            <button class="tablink" onclick="openDay(event, 'Wednesday')">Wednesday</button>
+            <button class="tablink" onclick="openDay(event, 'Thursday')">Thursday</button>
+            <button class="tablink" onclick="openDay(event, 'Friday')">Friday</button>
+            <button class="tablink" onclick="openDay(event, 'Saturday')">Saturday</button>
+            <button class="tablink" onclick="openDay(event, 'Sunday')">Sunday</button>
+        </section>
+        <section id="schedule">
+            <div id="Monday" class="day">
+                <h2>Monday</h2>
+                <table class="scheduleTable">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Activity</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div id="Tuesday" class="day">
+                <h2>Tuesday</h2>
+                <table class="scheduleTable">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Activity</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div id="Wednesday" class="day">
+                <h2>Wednesday</h2>
+                <table class="scheduleTable">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Activity</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div id="Thursday" class="day">
+                <h2>Thursday</h2>
+                <table class="scheduleTable">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Activity</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div id="Friday" class="day">
+                <h2>Friday</h2>
+                <table class="scheduleTable">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Activity</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div id="Saturday" class="day">
+                <h2>Saturday</h2>
+                <table class="scheduleTable">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Activity</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div id="Sunday" class="day">
+                <h2>Sunday</h2>
+                <table class="scheduleTable">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Activity</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+        <section id="addActivity">
+            <h2>Add Activity</h2>
+            <form id="activityForm">
+                <label for="day">Day:</label>
+                <select id="day" name="day" required>
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                    <option value="Sunday">Sunday</option>
+                </select>
+                <label for="time">Time:</label>
+                <input type="text" id="time" name="time" placeholder="hh:mm" required>
+                <select id="ampm" name="ampm" required>
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+                <label for="activity">Activity:</label>
+                <input type="text" id="activity" name="activity" required>
+                <button type="submit">Add</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Schedule Customizer</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
